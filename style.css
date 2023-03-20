@@ -1,0 +1,138 @@
+h1
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    border: 200px,300px;
+    border-color: black;
+    border-style: outset;
+    border-width: 5px;
+}
+pre
+{
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    border-right: .15px solid black;
+    white-space: nowrap;
+    font-size: large;
+    margin: 0;
+    color: aliceblue;
+    letter-spacing: .15px;
+    animation:
+    typing 1s steps(1000, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from
+    {
+        width: 0;
+    }
+
+    to
+    {
+        width: 50%;
+    }
+    
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent;}
+    50% {border-color: black;}
+    
+}
+
+.textColorTransition {
+    color: rgb(255, 255, 255);
+    transition-duration: .5s;
+    transition-delay: .15ms;
+}
+
+.textColorTransition:hover {
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    border-left: 10px;
+    border-left-color: rgb(54, 54, 54);
+    border-left-width: 5px;
+    border-left-style: groove;
+}
+
+
+
+.boxsize
+{
+ transition-duration:.5s;
+ transition-delay: .15ms;
+ width: 50px;
+}
+
+
+.boxsize:hover
+{
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 300px;
+}
+p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+body
+{
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-name: entrada;
+    background-color: rgb(53,53,51);
+}
+
+@keyframes passarImagens {
+
+    0%
+    {
+        transform: translateX(-150%);
+    }
+
+    100%
+    {
+        transform:translateX(0%);
+    }
+    
+}
+
+
+@keyframes entrada {
+
+    0%
+    {
+        transform: translateY(-200%);
+    }
+
+    100%
+    {
+        transform:translateY(0%);
+    }
+    
+}
+
+.passarImagem {
+    animation-name: passarImagens;
+    animation-duration: 0.5s;
+}
+
+.buttonCenter
+{
+    animation-name: saida;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
